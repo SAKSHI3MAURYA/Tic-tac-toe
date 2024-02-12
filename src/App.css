@@ -1,0 +1,85 @@
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(4, 4, 4);
+  height: 500px;
+  width: 500px;
+  color: blanchedalmond;
+  border-radius: 20px;
+}
+
+table td {
+  border: 2px solid rgb(254, 254, 254);
+  width: 100px;
+  height: 100px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.cell-X {
+  background-color: red;
+  color: #ffffff;
+}
+
+.cell-O {
+  background-color: rgb(32, 138, 200);
+  color: #ffffff;
+}
+
+.winner {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  display: none;
+}
+
+.winner.show {
+  display: block;
+}
+
+.reset-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  background-color: #193047;
+  
+}
